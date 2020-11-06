@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+          $("#addRow").click(function() {
+            $("<div />", {name: "gradeRow"})
+              .append($("<input />", {type: "number", name: "grade", title: "test"}))
+              .append($("<input />", {type: "number", name: "weight"}))
+              .appendTo("form");
+        });
+    });
+
+
+    </script>
+
+    <button id = "addRow">Add row</button>
+
+
+    <form action = "http://localhost:5000/result" method = "POST">
+        <h1>Grade: </h1> <h1></h1>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+
+</html>
